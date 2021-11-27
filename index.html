@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+.btn{
+  height: 100px;
+  width: 250px;
+  font-family: ヒラギノ角ゴ;
+  font-size: 50px;
+  }
+.aisatu{
+  font-size: 99px;
+  font-family: ＤＦＰ勘亭流;
+}
+
+</style>
+</head>
+<body>
+<input  value="朝にする" type=button id="btn" onclick="kaeru1()" class="btn">
+<input  value="夜にする" type=button id="btn2" onclick="kaeru2()" class="btn">
+
+<p class="aisatu" id="sa">おはようございます</p>
+
+
+<script>
+var hen = document.getElementById('sa');
+
+function kaeru2(){
+  hen.innerHTML = "こんばんわ";
+}
+
+function kaeru1(){
+  hen.innerHTML = "おはようございます"
+}
+//# sourceURL=userscript.js
+</script>
+</body>
+</html>
